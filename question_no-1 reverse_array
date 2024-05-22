@@ -1,0 +1,32 @@
+package dsa_again;
+
+import java.util.Arrays;
+
+public class reverse{
+	public static void main(String[] args) {
+		int[] array = {4,5,7,6,9,8,4};
+		reverse(array);
+		
+		
+		
+	}
+	
+	public static void reverse(int[]arr) {
+		int start = 0;
+		int end = arr.length-1;
+		
+		while(start<end) {
+		
+			int temp = arr[start];
+			arr[start] = arr[end];
+			arr[end]= temp;
+			
+			end --;
+			start++;
+			
+		
+		}
+		
+		System.out.println(Arrays.toString(arr));
+	}
+}
